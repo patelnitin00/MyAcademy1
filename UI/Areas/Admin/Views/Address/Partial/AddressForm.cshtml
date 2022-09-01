@@ -1,0 +1,54 @@
+﻿@model DTO.AddressDTO
+
+<div class="box-body">
+
+    <div class="form-group">
+        <label>Address Content</label>
+        @Html.TextBoxFor(x => x.AddressContent, new { @class = "form-control", @placeholder = "Address" })
+        @Html.ValidationMessageFor(x => x.AddressContent)
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @placeholder = "Email" })
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+    <div class="form-group">
+        <label>Phone</label>
+        @Html.TextBoxFor(x => x.Phone, new { @class = "form-control", @placeholder = "Phone" })
+        @Html.ValidationMessageFor(x => x.Phone)
+    </div>
+
+    <div class="form-group">
+        <label>Phone2</label>
+        @Html.TextBoxFor(x => x.Phone2, new { @class = "form-control", @placeholder = "Phone2" })
+        @Html.ValidationMessageFor(x => x.Phone2)
+    </div>
+
+    <div class="form-group">
+        <label>FAX</label>
+        @Html.TextBoxFor(x => x.Fax, new { @class = "form-control", @placeholder = "FAX" })
+        @Html.ValidationMessageFor(x => x.Fax)
+    </div>
+
+    <div class="form-group">
+        <label>Large Map Path</label>
+        @Html.TextBoxFor(x => x.LargeMapPath, new { @class = "form-control", @placeholder = "Large Map Path" })
+        @Html.ValidationMessageFor(x => x.LargeMapPath)
+    </div>
+
+    <div class="form-group">
+        <label>Small Map Path</label>
+        @Html.TextBoxFor(x => x.SmallMapPath, new { @class = "form-control", @placeholder = "Small Map Path" })
+        @Html.ValidationMessageFor(x => x.SmallMapPath)
+    </div>
+
+
+    <input type="number" name="ID" value="@Model.ID" hidden />
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+
+</div>
